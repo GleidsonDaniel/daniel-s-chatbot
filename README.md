@@ -22,17 +22,17 @@ Instale as bibliotecas em cada um dos repositorios, `./chatbot-api`, `./chatbot-
 
 ## Como inicializar o projeto
 
-* Para inicializar o front-end (web), (mobile) e back-end simultaneamente, digite no terminal `npm start` dentro da pasta raiz do projeto.
+* Para inicializar o front-end **web**, **mobile** e back-end simultaneamente, digite no terminal `npm start` dentro da pasta raiz do projeto.
 
-* Para inicializar o front-end (web) e o back-end simultaneamente, digite no terminal `npm start web` dentro da pasta raiz do projeto.
+* Para inicializar o front-end **web** e o back-end simultaneamente, digite no terminal `npm start web` dentro da pasta raiz do projeto.
 
-* Para inicializar o front-end (mobile) e o back-end simultaneamente, digite no terminal `npm start mobile` dentro da pasta raiz do projeto.
+* Para inicializar o front-end **mobile** e o back-end simultaneamente, digite no terminal `npm start mobile` dentro da pasta raiz do projeto.
 
 * Para inicializar somente o back-end, digite no seu terminal `yarn start` ou `npm start` dentro da pasta `./chatbot-api`. o servidor Express inicializa por padrão na porta `3100`.
 
-* Para inicializar somente o front-end (web), digite no seu terminal `yarn start` ou `npm start` dentro da pasta `./chatbot-ui-web`.
+* Para inicializar somente o front-end **web**, digite no seu terminal `yarn start` ou `npm start` dentro da pasta `./chatbot-ui-web`.
 
-* Para inicializar somente o front-end (mobile), digite no seu terminal `yarn start` ou `npm start` dentro da pasta `./chatbot-ui-mobile`.
+* Para inicializar somente o front-end **mobile**, digite no seu terminal `yarn start` ou `npm start` dentro da pasta `./chatbot-ui-mobile`.
 
 ## Como usar a variavel dev
 
