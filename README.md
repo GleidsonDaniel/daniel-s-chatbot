@@ -12,9 +12,9 @@ Esta é uma demonstração simples de um chatbot, criado com [Express](https://e
 
 ```
 
-`chatbot-api`: Contém os códigos do back-end que estão escritos em Javscript (Node - Express) utilizando-se da biblioteca node-nlp
-`chatbot-ui-mobile`: Contém os codigos do front-end mobile, feito com o framework React Native + Redux
-`chatbot-ui-web`: Contém os codigos do front-end web, feito com o biblioteca ReactJs + Redux
+`chatbot-api`: Contém os códigos do back-end que estão escritos em Javscript (Node - Express) utilizando-se da biblioteca node-nlp  
+`chatbot-ui-mobile`: Contém os codigos do front-end mobile, feito com o framework React Native + Redux  
+`chatbot-ui-web`: Contém os codigos do front-end web, feito com o biblioteca ReactJs + Redux  
 
 ## Instale as bibliotecas necessarias para o funcionamento do projeto
 
