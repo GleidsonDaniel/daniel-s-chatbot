@@ -6,7 +6,7 @@
   "scripts": {
     "server": "cd chatbot-api && npm start",
     "dev-server": "cd chatbot-api && npm run dev",
-    "client": "cd chatbot-ui && npm start",
+    "client": "cd chatbot-ui-web && npm start",
     "start": "./node_modules/.bin/concurrently \"npm run server\" \"npm run client\"",
     "dev": "./node_modules/.bin/concurrently \"npm run dev-server\" \"npm run client\""
   },

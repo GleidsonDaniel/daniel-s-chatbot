@@ -8,7 +8,7 @@ exports.welcomeMessage = (request, response) => {
   logger.info(`${request.method} ${request.url}`);
 
   const responseObj = {
-    answer: 'Hi, how may I assist you today?'
+    answer: 'Olá, como posso te ajudar?'
   };
 
   response.set('Content-Type', 'application/json');
@@ -17,14 +17,18 @@ exports.welcomeMessage = (request, response) => {
 
 exports.generateAnswer = async (request, response) => {
   if (request.body.question && request.body.question !== '') {
-    logger.info(`${request.method} ${request.url}`, { params: JSON.stringify(request.body) });
+    logger.info(`${request.method} ${request.url}`, {
+      params: JSON.stringify(request.body)
+    });
     const result = await manager.process(request.body.question);
 
     const responseObj = {
-      answer: result.score > THRESHOLD && result.answer ? result.answer : "Sorry, I don't understand"
+      answer: result.score > THRESHOLD && result.answer ? result.answer : 'Desculpe, Eu não entendi'
     };
 
-    logger.info(`Response to ${request.method} ${request.url}`, { params: JSON.stringify({ answers: result.intent }) });
+    logger.info(`Response to ${request.method} ${request.url}`, {
+      params: JSON.stringify({ answers: result.intent })
+    });
 
     response.set('Content-Type', 'application/json');
     response.send(JSON.stringify(responseObj));
