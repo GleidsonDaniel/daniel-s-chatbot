@@ -13,7 +13,7 @@ import './Chatbot.scss';
 const Chatbot = ({ actions }) => {
   useEffect(() => {
     actions.testConnection();
-  },[]);
+  },[actions]);
 
   return (
     <div className="chatbot">

@@ -1,9 +1,7 @@
-import * as types from './types';
-import initialState from './states';
+import * as types from "./types";
+import initialState from "./states";
 
 export default (state = initialState, action) => {
-  console.log(action);
-
   switch (action.type) {
     //Test Conections
     case types.SERVER_CONNECT_SUCCESS:
@@ -45,7 +43,7 @@ export default (state = initialState, action) => {
           ...state.chatRecord,
           {
             text: action.text,
-            user: 'bot'
+            user: "bot"
           }
         ]
       });
