@@ -22,7 +22,7 @@ dotenv.config();
 const welcomeMessage = (port) => {
   const ALL_INTERFACES = os.networkInterfaces();
   const NETWORK_INTERFACE = Object.prototype.hasOwnProperty.call(ALL_INTERFACES, 'en0') ? ALL_INTERFACES.en0 : ALL_INTERFACES.en1;
-  const NETWORK_ADDRESS = NETWORK_INTERFACE[1].address;
+  const NETWORK_ADDRESS = NETWORK_INTERFACE && NETWORK_INTERFACE[1].address;
 
   const msg = [
     '\x1b[32mServing!\n\n',

@@ -8,8 +8,8 @@ import asyncComponent from 'utils/AsyncComponent';
 // Styles
 import 'styles/App.scss';
 
-const ChatbotPage = asyncComponent(() => import(/* webpackChunkName: 'ChatbotPage' */ 'pages/Chatbot'));
-const NotFound = asyncComponent(() => import(/* webpackChunkName: 'NotFound' */ 'pages/NotFound'));
+const ChatbotPage = asyncComponent(() => import('./pages/Chatbot'));
+const NotFound = asyncComponent(() => import('./pages/NotFound'));
 
 class App extends Component {
   render() {
